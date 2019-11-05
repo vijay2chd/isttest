@@ -30,7 +30,12 @@ pipeline {
              fingerprint 'target/*.jar'
              }
     }
+      stage('HTML_Publish'){
+             steps {
+             junit 'target/surefire-reports/TEST-*.xml'
+             }
 
+      }
  }
 
 }
