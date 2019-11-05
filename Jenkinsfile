@@ -22,12 +22,12 @@ pipeline {
 
      stage('Archieve') {
              steps {
-          archiveArtifacts "target/*.jar"
+          archiveArtifacts 'target/*.jar'
              }
     }
      stage('FingerPrint') {
              steps {
-             fingerprint 'target/*.jar
+             fingerprint 'target/*.jar'
              }
     }
 
